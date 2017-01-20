@@ -1,11 +1,47 @@
 <html lang="de">
 <head>
+	<link href="Site.css" rel="stylesheet">
+
   <meta charset="UTF-8">
   <meta name="author" content="Dominik Holweck">
   <title>Index</title>
 </head>
 
 <body>
-  
+
+	<script src="Script.js"></script>
+
+	<header>
+		<h1>Game</h1>
+	</header>
+
+	<main>
+		<section id='gameSection'>
+			<span>Money: </span>
+			<span id='money' onchange='refreshUpgrades()'>0</span>
+			<p/>
+			<button onclick="clickForMoney()">Make Money</button>
+		</section>
+		<section id='upgradesSection'>
+			<h1>Upgrades</h1>
+			<table id='upgradeTable'>
+				<thead>
+					<tr>
+            <th></th>
+            <th></th>
+						<th></th>
+          </tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Money Upgrade</td>
+						<td>0</td>
+						<td><button onclick='moneyUpgrade0()'>20</button></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</main>
+
 </body>
 </html>
